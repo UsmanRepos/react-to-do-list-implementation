@@ -1,0 +1,102 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.toDoList::-webkit-scrollbar{
+    width: 8px;
+    background-color: inherit;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#root{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px;
+    border: 5px solid cornflowerblue;
+    overflow: hidden;
+}
+.title{
+    text-align: center;
+    border-bottom: 2px solid cornflowerblue;
+    color: cornflowerblue;
+}
+.body{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.input__con{
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.input__field {
+    width: 82%;
+    height: 45px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-size: large;
+    border-radius: 999px;
+    border:1px solid cornflowerblue;
+    border-bottom: 3px solid cornflowerblue;
+    box-shadow: 0px 0px 1px cornflowerblue;   
+}
+button{
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    background-color: #2196F3;
+    font-weight: 600;
+    font-size: x-large;
+}
+button:hover{
+    background-color: #70e000;
+}
+.toDoList{
+    flex:11;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+.listItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 10px 0px;
+    border: .5px solid cornflowerblue;
+    box-shadow: 2px 2px 0px #2196F3;
+}
+li{
+    list-style: none;
+    color:cornflowerblue;
+    text-align: left;
+    font-weight: 600;
+    font-size: larger;
+    margin: 10px;
+    text-transform: capitalize; 
+}
+
+@media (min-width:600px) {
+    #root {
+        flex:unset;
+        width: 340px;
+        height: 600px;
+    }   
+}
